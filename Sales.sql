@@ -1,27 +1,5 @@
-
-CREATE TABLE sales (
-    Order_ID INT PRIMARY KEY,
-    Product_ID INT,
-    Customer_ID INT,
-    Customer_Name VARCHAR(100),
-    Segment VARCHAR(50),
-    Category VARCHAR(50),
-    Region VARCHAR(50),
-    City VARCHAR(50),
-    Order_Date DATE,
-    Ship_Date DATE,
-    Ship_Mode VARCHAR(50),
-    Sales DECIMAL(10,2)
-);
-
-INSERT INTO sales (Order_ID, Product_ID, Customer_ID, Customer_Name, Segment, Category, Region, City, Order_Date, Ship_Date, Ship_Mode, Sales)
-VALUES
-(1, 101, 1001, 'Alice', 'Consumer', 'Furniture', 'West', 'Los Angeles', '2023-01-15', '2023-01-20', 'Standard', 500.00),
-(2, 102, 1002, 'Bob', 'Corporate', 'Technology', 'East', 'New York', '2023-02-10', '2023-02-15', 'Express', 1200.00);
-
-
--- create database sales_data
--- use  sales;
+create database sales_data
+use  sales_data;
 
 -- view table
 select * from sales;
